@@ -1,101 +1,156 @@
+/* Apply box-sizing to all elements for consistent sizing */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Set background color for the entire page */
 body {
     background-color: #d9dcd6;
-    
 }
-/* flex-wrap: wrap*/
-/* Postion Fixed */
-/* Increase Font Size */
-.header {
+
+/* Style the header section */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    font-size: 120%;
 }
 
-
-.header h1 {
+/* Style for top-level headings */
+h1 {
     display: inline-block;
     font-size: 48px;
-
 }
 
-.header h1 .seo {
+/* Style for a specific class within an h1 element */
+h1 .seo {
     color: #d9dcd6;
 }
-    /* Change font size and width*/
-.header div {
+
+/* Style for secondary headings */
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Style for tertiary headings */
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Style for quaternary headings */
+h4 {
+    font-size: 20px;
+}
+
+/* Style for navigation bar */
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60%;
-    width: 80%;
-   
+    font-size: 20px;
 }
 
-.header div ul {
+/* Remove bullet points from unordered lists */
+ul {
     list-style-type: none;
-
 }
 
-.header div ul li {
+/* Style for list items in navigation */
+li {
     display: inline-block;
     margin-left: 25px;
-
 }
 
+/* Style for anchor links */
 a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 200%;
 }
 
-/* Font Size Increase */
+/* Set font size for paragraphs */
 p {
-    font-size: 25px;
+    font-size: 16px;
 }
 
-.hero {
+/* Style for the footer section */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style for the "meeting" class with a background image */
+.meeting {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
-    
 }
 
-/* Combine repeating id */
-
-.float-left .float-right {
-    float: left;
-    margin-right: 25px;
-}
-/* 
-.float-right {
-    float: right;
-    margin-left: 25px;
-} */
-
-
-.content {
+/* Style for content in the middle section of the page */
+.content-middle {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
- 
 }
 
-.benefits {
+/* Set maximum height for images in the middle section */
+.content-middle img {
+    max-height: 200px;
+}
+
+/* Style for elements with the ID "float-left" */
+#float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* Style for elements with the ID "float-right" */
+#float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* Style for the "search-engine-optimization" section */
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Style for the "online-reputation-management" section */
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Style for the "social-media-marketing" section */
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Style for content in the right section of the page */
+.content-right {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -104,91 +159,29 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-  
 }
 
-.benefits {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefits h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefits img {
+/* Set maximum width for images in the right section */
+.content-right img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* Adding overflow */
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+/* Style for the "benefit-lead" section */
+.benefit-lead {
+    margin-bottom: 32px;
     color: #ffffff;
-    overflow: auto; 
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+/* Style for the "benefit-brand" section */
+.benefit-brand {
+    margin-bottom: 32px;
     color: #ffffff;
-    overflow: auto;
 }
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+/* Style for the "benefit-cost" section */
+.benefit-cost {
+    margin-bottom: 32px;
     color: #ffffff;
-    overflow: auto;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
 }
